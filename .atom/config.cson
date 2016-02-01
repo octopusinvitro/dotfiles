@@ -1,0 +1,107 @@
+"*":
+  "atom-package-deps":
+    ignored: []
+  "atom-workspace":
+    "alt-shift-p": "pigments:show-palette"
+  core:
+    customFileTypes:
+      "html.ruby.text": [
+        "builder"
+      ]
+      "source.python": [
+        "proto"
+      ]
+      "source.shell": [
+        "bash_aliases"
+        "conf"
+        "gitignore"
+        "profile"
+        "smiley_prompt"
+      ]
+      "text.tex.latex": [
+        "lytex"
+      ]
+    disabledPackages: [
+      "pigments"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 64
+    softWrap: true
+    tabLength: 2
+  "exception-reporting":
+    userId: "5e80d6af-5278-4d29-a2d8-26f1189b8046"
+  linter: {}
+  "linter-eslint":
+    autofix: {}
+    disabling:
+      disableWhenNoEslintConfig: false
+    global:
+      eslintrcPath: "./eslintrc.json"
+  "linter-flake8":
+    ignoreErrorCodes: [
+      "E221"
+      "E501"
+      "E402"
+    ]
+  "linter-jshint":
+    lintInlineJavaScript: true
+  "linter-phpcs":
+    tabWidth: 4
+  "linter-rubocop":
+    command: "/home/ubuntu/.rbenv/shims/rubocop"
+  "linter-ui-default":
+    showPanel: true
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.tex.latex"
+      "text.md"
+    ]
+    locales: [
+      "en-GB"
+    ]
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: true
+".basic.html.text":
+  editor:
+    tabLength: 2
+".c.source":
+  editor:
+    tabLength: 4
+".cpp.source":
+  editor:
+    tabLength: 4
+".cs.source":
+  editor:
+    tabLength: 4
+".erb.html.text":
+  editor:
+    tabLength: 2
+".html.jsp.text":
+  editor:
+    tabLength: 4
+".html.php.text":
+  editor:
+    tabLength: 4
+".html.ruby.text":
+  editor:
+    tabLength: 2
+".java.source":
+  editor:
+    tabLength: 4
+".python.source":
+  editor:
+    tabLength: 4

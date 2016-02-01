@@ -1,0 +1,4 @@
+'atom-text-editor':
+  'ctrl-i': 'editor:auto-indent'
+  'ctrl-shift-x': 'autoprefixer:prefix'
+  'ctrl-shift-u': 'autoprefixer:remove-prefixes'

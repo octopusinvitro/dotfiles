@@ -1,0 +1,7 @@
+# Run the shared bashrc
+if [ -f ~/.bashrc_all ]; then
+    . ~/.bashrc_all
+fi
+
+alias ls='ls --color -hX'
+export PS1="\`if [ \$? = 0 ]; then echo \[\e[32m\]\[\e[1m\]:\) \[\e[0m\]; else echo \[\e[36m\]\[\e[1m\]:\( \[\e[0m\]; fi\`"

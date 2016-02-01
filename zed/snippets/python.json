@@ -1,0 +1,23 @@
+// Each snippet must have a name and body, but the prefix and description are optional.
+// The prefix is used to trigger the snippet, but when omitted then the name is used.
+// Use placeholders like $1, $2 or ${1:defaultValue} to define tab stops.
+// The $0 determines the final cursor position.
+// Placeholders with the same value are linked.
+{
+  "ipdbDebugger": {
+    "prefix": "ipdb",
+    "body": [
+      "import ipdb; ipdb.set_trace()",
+      "$0"
+    ],
+    "description": "Sets a debugging point with ipdb"
+  },
+  "pdbDebugger": {
+    "prefix": "pdb",
+    "body": [
+      "import pdb; pdb.set_trace()",
+      "$0"
+    ],
+    "description": "Sets a debugging point with pdb"
+  }
+}
