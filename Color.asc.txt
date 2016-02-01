@@ -1,0 +1,43 @@
+Color.asc is a config file for MSDOS
+Save Color.asc in Windows/System32
+BEWARE: should have an empty line at the end.
+
+
+Color	Background	Foreground
+Black	0	0
+Blue	1	1
+Green	2	2
+Cyan	3	3
+Red	4	4
+Magenta	5	5
+Brown	6	6
+White	7	7
+Gray	-	8
+Intense Blue	-	9
+Intense Green	-	A
+Intense Cyan	-	B
+Intense Red	-	C
+Intense Magenta	-	D
+Yellow	-	E
+Intense White	-	F
+
+Go to Windows/System32 and type Debug < Color.asc
+The MS-DOS Debug utility compiles the code into the Color.com file
+
+---------------------------------------------------------------------
+If you don't have Debug installed, try opening MSDOS and type:
+color 57
+
+The first number is the backgorund color and the second the text
+0 = Black	8 = Gray
+1 = Blue	9 = Light Blue
+2 = Green	A = Light Green
+3 = Aqua	B = Light Aqua
+4 = Red	C = Light Red
+5 = Purple	D = Light Purple
+6 = Yellow	E = Light Yellow
+7 = White	F = Bright White
+
+
+If you want to make it permanent, open the properties dialog and change it there.
+If you change colors this way, you will loose bold style.

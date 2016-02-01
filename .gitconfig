@@ -1,0 +1,46 @@
+# This is Git's per-user configuration file.
+[init]
+  defaultBranch = main
+[user]
+  name  = private
+  email = user@example.com
+[core]
+  fileMode = false
+  editor = gedit
+  preloadIndex = true
+  #	editor = /Applications/Sublime\\ Text\\ 2.app/Contents/SharedSupport/bin/subl -w
+[credential]
+  helper = cache --timeout=3600
+[gc]
+  auto = 256
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[color "status"]
+# header =
+  added = green
+  changed = cyan
+  untracked = magenta
+#	branch =
+#	unmerged =
+[color "branch"]
+  current = green
+  local = cyan
+  remote = yellow
+  upstream = cyan
+#	plain =
+[color "diff"]
+  plain = white
+  meta = cyan
+  frag = magenta
+  func = magenta
+  old = yellow
+  new = green
+  commit = yellow
+#	whitespace = green
+# COLORS
+# normal, black, red, green, yellow, blue, magenta, cyan and white;

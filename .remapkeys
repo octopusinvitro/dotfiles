@@ -1,0 +1,8 @@
+xmodmap -e "keycode  96 = Delete Delete Delete"
+xmodmap -e "keycode 119 = Home NoSymbol Home"
+xmodmap -e "keycode 127 = End NoSymbol End"
+xmodmap -e "keycode 107 = Prior NoSymbol Prior NoSymbol Prior"
+xmodmap -e "keycode 110 = Next NoSymbol Next NoSymbol Next"
+xmodmap -e "keycode 117 = Pause Break Pause Break Pause Break"
+xmodmap -e "keycode 115 = Print Sys_Req Print Sys_Req Print Sys_Req"
+xmodmap -e "keycode 112 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12"

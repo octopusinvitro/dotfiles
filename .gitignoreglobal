@@ -1,0 +1,6 @@
+# If you mark your commonly-used packages with stars, you can install them super-simple by typing: apm stars --install.
+# There is also Sync Settings: https://atom.io/packages/sync-settings
+.DS_Store
+.sass_cache
+.Thumbs.db
+.Desktop.ini

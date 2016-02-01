@@ -1,0 +1,56 @@
+# -=-=-=-=- EVERY POLITICIAN -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Bash alias does not directly accept parameters. You have to create a function
+# and alias that. alias does not accept parameters but it can alias a function
+# that does. For example:
+
+countries() {
+  pushd ../../../; EP_COUNTRY_REFRESH=$1 be rake countries.json; git add countries.json; git commit -m "Refresh countries.json"; popd;
+}
+# alias country=countries
+
+# By the way, Bash functions defined in your .bashrc and other files are
+# available as commands within your shell. So for instance you can call the
+# earlier function like this
+
+# $ myfunction original.conf my.conf
+
+bot() {
+  cd ../../../; be rake pull_request_summary:comment PULL_REQUEST=$*; be rake pull_request_summary:print PULL_REQUEST=$*; cd -;
+}
+
+preview() {
+  cd $DATOS/repos/mySociety/viewer-sinatra
+  bundle install
+  DATASOURCE=https://cdn.rawgit.com/everypolitician/everypolitician-data/$1/countries.json foreman start
+  cd -
+}
+
+rebuild() {
+  curl -X POST https://everypolitician-rebuilder.herokuapp.com/$1
+}
+
+sidekiq-pass() {
+  heroku config:get SIDEKIQ_PASSWORD --app $1
+}
+
+sidekiq() {
+  heroku apps:open sidekiq --app $1
+}
+
+sql2csv() {
+  sqlite3 data.sqlite <<!
+.headers on
+.mode csv
+.output data.csv
+$1
+!
+}
+
+reinstalltidy() {
+  sudo apt-get remove libtidy-0.99-0 tidy -y
+  datos
+  wget -O tidy-5.2.0-64bit.deb 'https://github.com/htacg/tidy-html5/releases/download/5.2.0/tidy-5.2.0-64bit.deb'
+  sudo dpkg -i tidy-5.2.0-64bit.deb
+  rm tidy-5.2.0-64bit.deb
+  cd -
+}
